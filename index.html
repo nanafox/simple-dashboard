@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Dashboard</title>
+    <meta name="author" content="Maxwell Nana Forson" />
+    <meta name="description" content="A simple dashboard using HTML and CSS" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="page">
+      <section class="main-area">
+        <header class="header">
+          <div id="top-header" class="flex">
+            <section id="search" class="flex flex-center-items gap-1">
+              <img
+                src="assets/icons/magnify.svg"
+                alt="a magnifier icon"
+                class="icon"
+              />
+              <input type="text" name="search" id="searchbox" class="main-bg" />
+            </section>
+            <nav class="nav" id="user-info-nav">
+              <ul class="flex flex-center-items gap-2">
+                <li>
+                  <img
+                    class="icon"
+                    src="assets/icons/bell-ring.svg"
+                    alt="a bell notification icon"
+                  />
+                </li>
+                <li class="user-avatar user-profile-pic-small">avatar</li>
+                <li class="username">John Doe</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="bottom-header" class="flex">
+            <div id="user-greeting" class="flex flex-center-items gap-1">
+              <div class="user-profile-pic-big user-avatar">avatar</div>
+              <div id="greeting">
+                <p id="hi-text">
+                  Hi there, <br />
+                  <span id="username-full">John Doe (@jdoe)</span>
+                </p>
+              </div>
+            </div>
+
+            <nav class="nav" id="actions">
+              <ul class="flex gap-2">
+                <li class="action">New</li>
+                <li class="action">Upload</li>
+                <li class="action">Share</li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <!-- every thing on the dashboard aside the header information -->
+        <main class="main main-bg">
+          <section id="projects">
+            <h2 class="project-header">Your Projects</h2>
+            <div id="project-cards">
+              <div class="card flex-col">
+                <h3 class="card-hdr">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium quibusdam nobis blanditiis, omnis fuga qui ipsum
+                  in numquam rerum necessitatibus tenetur, dicta minima? Sed
+                  voluptas quis repellendus unde corporis explicabo?
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-col">
+                <h3 class="card-hdr">Less Cool Project</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  ab delectus tenetur hic officia corporis nisi aut sit, quas
+                  voluptatem, quaerat excepturi itaque ex perspiciatis maxime
+                  quisquam, labore laboriosam nobis?
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-col">
+                <h3 class="card-hdr">Impossible App</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Temporibus odit voluptate delectus est commodi nulla accusamus
+                  unde optio culpa repudiandae doloremque, neque ad dolores
+                  itaque libero. Dolor maxime iure quam.
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-col">
+                <h3 class="card-hdr">Easy Peasy App</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Harum numquam porro voluptates. Ducimus ea tempora dolor qui,
+                  earum similique numquam veritatis deleniti modi, aliquam est
+                  dignissimos, officiis fugit laboriosam molestias.
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-col">
+                <h3 class="card-hdr">Ad Blocker</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus alias cum optio nam dolores nisi, soluta quis esse
+                  et quas, ducimus explicabo atque, molestias nobis placeat?
+                  Assumenda laborum nam possimus.
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-col">
+                <h3 class="card-hdr">Money Maker</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur esse harum est neque temporibus a natus, numquam
+                  vel necessitatibus facilis doloribus ullam ad vitae quo
+                  cupiditate aut, corrupti possimus autem!
+                </p>
+                <div class="card-actions flex gap-1">
+                  <div>
+                    <img
+                      src="assets/icons/eye-plus-outline.svg"
+                      alt="an eye icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/star-plus-outline.svg"
+                      alt="a start icon"
+                      class="icon"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/icons/share-variant-outline.svg"
+                      alt="a share icon"
+                      class="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="aside-content">
+            <section>
+              <h2>Announcements</h2>
+              <section id="announcements">
+                <article class="announcement">
+                  <h3>Site Maintenance</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto, veniam dicta impedit placeat exercitationem eveniet
+                    harum perferendis ea, provident laborum quo voluptatum eum
+                    ullam repudiandae. Dolores blanditiis tempore ducimus harum?
+                  </p>
+                  <hr class="underline" />
+                </article>
+
+                <article class="announcement">
+                  <h3>Community Share Day</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto, veniam dicta impedit placeat exercitationem eveniet
+                    harum perferendis ea, provident laborum quo voluptatum eum
+                    ullam repudiandae. Dolores blanditiis tempore ducimus harum?
+                  </p>
+                  <hr class="underline" />
+                </article>
+
+                <article class="announcement">
+                  <h3>Updated Privacy Policy</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Iusto, veniam dicta impedit placeat exercitationem eveniet
+                    harum perferendis ea, provident laborum quo voluptatum eum
+                    ullam repudiandae. Dolores blanditiis tempore ducimus harum?
+                  </p>
+                </article>
+              </section>
+            </section>
+
+            <section id="trending">
+              <h2>Trending</h2>
+              <section id="trending-stuff">
+                <div class="trending-item flex gap-1 flex-center-items">
+                  <div class="user-profile-pic-small user-avatar">avatar</div>
+                  <div class="trending-item-text">
+                    <p class="username">@tegan</p>
+                    <p class="trending-project">World Peace Builder</p>
+                  </div>
+                </div>
+
+                <div class="trending-item flex gap-1 flex-center-items">
+                  <div class="user-profile-pic-small user-avatar">avatar</div>
+                  <div class="trending-item-text">
+                    <p class="username">@jdoe</p>
+                    <p class="trending-project">Super Cool Project</p>
+                  </div>
+                </div>
+
+                <div class="trending-item flex gap-1 flex-center-items">
+                  <div class="user-profile-pic-small user-avatar">avatar</div>
+                  <div class="trending-item-text">
+                    <p class="username">@kenall</p>
+                    <p class="trending-project">Life Changing App</p>
+                  </div>
+                </div>
+
+                <div class="trending-item flex gap-1 flex-center-items">
+                  <div class="user-profile-pic-small user-avatar">avatar</div>
+                  <div class="trending-item-text">
+                    <p class="username">@alex</p>
+                    <p class="trending-project">No Traffic Maker</p>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+        </main>
+      </section>
+
+      <section class="sidebar flex-col">
+        <div class="logo flex gap-1 flex-center-items">
+          <img
+            src="assets/icons/view-grid.svg"
+            alt="a grid box"
+            class="logo-img svg-bg-to-white"
+          />
+          <h1 class="logo-text">Dashboard</h1>
+        </div>
+
+        <div id="sidebar-g1">
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/home.svg"
+              alt="home icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Home</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/card-account-details-outline.svg"
+              alt="user profile icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Profile</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/message.svg"
+              alt="message icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Messages</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/history.svg"
+              alt="history icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>History</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/file-multiple.svg"
+              alt="mutliple files icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Tasks</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/account-group.svg"
+              alt="a community icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Communities</h3>
+          </div>
+        </div>
+
+        <div id="sidebar-g2">
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/cog.svg"
+              alt="a settings icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Settings</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/help-box.svg"
+              alt="a support icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Support</h3>
+          </div>
+
+          <div class="sidebar-content flex gap-1">
+            <img
+              src="assets/icons/shield-check.svg"
+              alt="a privacy icon"
+              class="svg-bg-to-white sidebar-icon"
+            />
+            <h3>Privacy</h3>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
